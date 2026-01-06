@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heinrich M. Tobias - Portfolio</title>
+    <title>Heinroch M. Tobias - Portfolio</title>
     <style>
         /* ========================================
            GLOBAL STYLES
@@ -208,14 +208,6 @@
             justify-content: center;
             box-shadow: 0 20px 60px rgba(233, 69, 96, 0.3);
             position: relative;
-            overflow: hidden; /* Ensures image stays in circle */
-        }
-
-        .profile-circle img {
-            width: 85%;
-            height: auto;
-            object-fit: contain;
-            z-index: 2;
         }
 
         .profile-circle::before {
@@ -227,6 +219,10 @@
             border-radius: 50%;
             animation: rotate 20s linear infinite;
             opacity: 0.3;
+        }
+
+        .profile-circle span {
+            font-size: 10rem;
         }
 
         /* ========================================
@@ -679,6 +675,10 @@
                 height: 300px;
             }
             
+            .profile-circle span {
+                font-size: 7rem;
+            }
+            
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 3rem;
@@ -726,6 +726,10 @@
                 height: 250px;
             }
             
+            .profile-circle span {
+                font-size: 5rem;
+            }
+            
             .about-image {
                 max-width: 300px;
                 height: 300px;
@@ -764,6 +768,10 @@
                 height: 200px;
             }
             
+            .profile-circle span {
+                font-size: 4rem;
+            }
+            
             .skills-container {
                 grid-template-columns: 1fr;
             }
@@ -796,6 +804,7 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <div class="logo">HMT</div>
@@ -809,6 +818,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home">
         <div class="hero-background"></div>
         <div class="hero-content">
@@ -820,12 +830,13 @@
             </div>
             <div class="hero-image">
                 <div class="profile-circle">
-                    <img src="image_fd740b.png" alt="Heinrich M. Tobias Avatar">
+                    <span>👨‍💻</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="about-grid">
@@ -851,14 +862,14 @@
                 <div class="about-text">
                     <h2>About Me</h2>
                     <h3>Hello! I'm Heinrich</h3>
-                    <p>I'm a passionate web developer dedicated to creating innovative digital solutions that make a difference. With a strong foundation in modern web technologies, I bring ideas to life through clean code and thoughtful design.</p>
-                    <p>My journey in web development has equipped me with expertise in front-end technologies, responsive design principles, and user-centered development. I believe in continuous learning and staying updated with the latest industry trends and best practices.</p>
-                    <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.</p>
+                    <p>Hi, I’m Heinrich M. Tobias, a 19-year-old who is equally passionate about the digital world and the hands-on experiences of daily life. When I’m not focused on my studies or career, you can usually find me on the basketball court or in the kitchen experimenting with new cooking recipes. My journey in web development has equipped me with a deep expertise in front-end technologies, responsive design principles, and user-centered development. I am a firm believer in the power of continuous learning, always making it a priority to stay updated with the latest industry trends and best practices. In my personal life, I strive to maintain a balance between my creative pursuits and a disciplined approach to self-improvement. This drive for growth ensures that every project I touch is built with both technical precision and a genuine focus on the user experience. I am excited to continue evolving as a developer and as an individual, looking forward to the challenges that lie ahead.</p>
+                    
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
@@ -868,7 +879,7 @@
                     <h3>HTML & CSS</h3>
                     <p>Semantic markup, modern CSS techniques, and responsive design</p>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 92%"></div>
+                        <div class="skill-progress" data-width="92"></div>
                     </div>
                     <span class="skill-percentage">92%</span>
                 </div>
@@ -877,7 +888,7 @@
                     <h3>JavaScript</h3>
                     <p>ES6+, DOM manipulation, and interactive web applications</p>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%"></div>
+                        <div class="skill-progress" data-width="88"></div>
                     </div>
                     <span class="skill-percentage">88%</span>
                 </div>
@@ -886,7 +897,7 @@
                     <h3>Responsive Design</h3>
                     <p>Mobile-first approach, Flexbox, and CSS Grid</p>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
+                        <div class="skill-progress" data-width="95"></div>
                     </div>
                     <span class="skill-percentage">95%</span>
                 </div>
@@ -895,7 +906,7 @@
                     <h3>Version Control</h3>
                     <p>Git, GitHub, and collaborative development workflows</p>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
+                        <div class="skill-progress" data-width="85"></div>
                     </div>
                     <span class="skill-percentage">85%</span>
                 </div>
@@ -904,7 +915,7 @@
                     <h3>UI/UX Design</h3>
                     <p>User-centered design, wireframing, and prototyping</p>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
+                        <div class="skill-progress" data-width="80"></div>
                     </div>
                     <span class="skill-percentage">80%</span>
                 </div>
@@ -913,7 +924,7 @@
                     <h3>Web Performance</h3>
                     <p>Optimization, accessibility, and best practices</p>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 87%"></div>
+                        <div class="skill-progress" data-width="87"></div>
                     </div>
                     <span class="skill-percentage">87%</span>
                 </div>
@@ -921,6 +932,7 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
@@ -977,7 +989,21 @@
                         <div class="project-tags">
                             <span>E-commerce</span>
                             <span>Responsive</span>
-                            <span>UI/UX</span>
+                            <span>UX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-icon">📝</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog Platform</h3>
+                        <p>A minimalist blog platform with markdown support, category filtering, and search functionality.</p>
+                        <div class="project-tags">
+                            <span>Blog</span>
+                            <span>Markdown</span>
+                            <span>Search</span>
                         </div>
                     </div>
                 </div>
@@ -986,26 +1012,12 @@
                         <span class="project-icon">🎮</span>
                     </div>
                     <div class="project-content">
-                        <h3>Browser Game</h3>
-                        <p>A fun and engaging browser-based game built with vanilla JavaScript and HTML5 Canvas. Features custom animations and sound effects.</p>
+                        <h3>Interactive Game</h3>
+                        <p>Browser-based game built with vanilla JavaScript. Features score tracking, difficulty levels, and smooth animations.</p>
                         <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML5 Canvas</span>
-                            <span>Game Dev</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <span class="project-icon">🌤️</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather App</h3>
-                        <p>A weather application that provides real-time weather data and forecasts for any location using a third-party API.</p>
-                        <div class="project-tags">
-                            <span>API Integration</span>
-                            <span>Async/Await</span>
-                            <span>CSS</span>
+                            <span>Game</span>
+                            <span>Animation</span>
+                            <span>Canvas</span>
                         </div>
                     </div>
                 </div>
@@ -1013,42 +1025,54 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3>Let's talk about everything!</h3>
-                    <p>Don't like forms? Send me an email. 👋</p>
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <div class="icon">📧</div>
+                            <span class="icon">📧</span>
                             <div>
                                 <h4>Email</h4>
-                                <p>heinrich@example.com</p>
+                                <p>heinroch.tobias@email.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="icon">📍</div>
+                            <span class="icon">📱</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+63 123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
                             <div>
                                 <h4>Location</h4>
-                                <p>City, Country</p>
+                                <p>Las Piñas, Philippines</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
@@ -1056,17 +1080,168 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-left">
-                <h3>Heinrich M. Tobias</h3>
+                <h3>Heinroch M. Tobias</h3>
                 <p>Web Developer & Designer</p>
             </div>
             <div class="footer-right">
-                <p>&copy; 2026 All rights reserved.</p>
-                <p>Made with <span style="color: var(--highlight-color);">❤</span> by Heinrich</p>
+                <p>&copy; 2026 Heinroch M. Tobias. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // SMOOTH SCROLL NAVIGATION
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FORM SUBMISSION HANDLER
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const subject = document.getElementById('subject').value.trim();
+                const message = document.getElementById('message').value.trim();
+                
+                if (name === '' || email === '' || subject === '' || message === '') {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+                
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                
+                alert(`Thank you, ${name}! Your message has been received.\n\nSubject: ${subject}\n\nI'll get back to you at ${email} as soon as possible.`);
+                form.reset();
+            });
+        }
+
+        // SKILL BARS ANIMATION
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const skillsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width + '%';
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // ACTIVE NAVIGATION HIGHLIGHTING
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // PROJECT CARDS FADE-IN
+        const projectObserver = new IntersectionObserver(function(entries) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    entry.target.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                    
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    projectObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            projectObserver.observe(card);
+        });
+
+        // SCROLL TO TOP BUTTON
+        const scrollBtn = document.createElement('button');
+        scrollBtn.innerHTML = '↑';
+        scrollBtn.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #e94560;
+            color: white;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+        `;
+
+        document.body.appendChild(scrollBtn);
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        console.log('%cWelcome to Heinroch M. Tobias Portfolio!', 'color: #e94560; font-size: 24px; font-weight: bold;');
+    </script>
 </body>
 </html>
