@@ -208,6 +208,14 @@
             justify-content: center;
             box-shadow: 0 20px 60px rgba(233, 69, 96, 0.3);
             position: relative;
+            overflow: hidden; /* Ensures image stays in circle */
+        }
+
+        .profile-circle img {
+            width: 85%;
+            height: auto;
+            object-fit: contain;
+            z-index: 2;
         }
 
         .profile-circle::before {
@@ -812,7 +820,8 @@
             </div>
             <div class="hero-image">
                 <div class="profile-circle">
-                    </div>
+                    <img src="image_fd740b.png" alt="Heinrich M. Tobias Avatar">
+                </div>
             </div>
         </div>
     </section>
@@ -1054,7 +1063,7 @@
                 <p>Web Developer & Designer</p>
             </div>
             <div class="footer-right">
-                <p>&copy; 2023 All rights reserved.</p>
+                <p>&copy; 2026 All rights reserved.</p>
                 <p>Made with <span style="color: var(--highlight-color);">❤</span> by Heinrich</p>
             </div>
         </div>
